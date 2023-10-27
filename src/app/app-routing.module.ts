@@ -10,6 +10,22 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'generos',
+    loadChildren: () => import('./generos/generos.module').then( m => m.GenerosPageModule)
+  },
+  {
+    path: 'edad',
+    loadChildren: () => import('./edad/edad.module').then( m => m.EdadPageModule)
+  },
+  {
+    path: 'pais',
+    loadChildren: () => import('./pais/pais.module').then( m => m.PaisPageModule)
+  },
+  {
+    path: 'clima',
+    loadChildren: () => import('./clima/clima.module').then( m => m.ClimaPageModule)
   }
 ];
 
